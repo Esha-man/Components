@@ -1,0 +1,39 @@
+.friendMessage {
+    max-width: 462px;
+    max-height: 77px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: antiquewhite;
+
+}
+
+.friendImageAndText {
+    display: flex;
+    flex-direction: row;
+}
+
+.friendImageAndText img {
+    width: 48px;
+    height: 48px;
+}
+
+.friendText {
+
+}
+
+.friendText:after {
+
+}
+
+.friendName {
+
+}
+
+.friendMessageText {
+
+}
+
+.friendTime {
+
+}

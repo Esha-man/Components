@@ -1,0 +1,40 @@
+.message {
+    max-width: 462px;
+    max-height: 77px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.imageAndText img {
+    width: 48px;
+    height: 48px;
+}
+
+.text {
+
+}
+
+.text:after {
+
+}
+
+.name {
+
+}
+
+.messageText {
+
+}
+
+.time {
+
+}
