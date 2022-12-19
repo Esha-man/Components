@@ -39,8 +39,10 @@ export const message0: MessageType = {
         name: 'You',
     },
     message: {
-        text: 'Привет, друг!',
-        time: '22:00',
+        text: 'Hello, how are you, what did you do yesterday? anything and rested all day, how are you?' +
+            'Hello, she didn’t do anything and rested all day, how are you? ' +
+            'Hello, she didn’t do anything and rested all day, ' ,
+        time: '22:02',
     },
 }
 
@@ -48,30 +50,35 @@ export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatarFriend,
-        name: 'Friend Name',
+        name: 'Friend',
     },
     message: {
-        text: 'И тебе - привет!',
-        time: '22:02',
+        text: 'Hello, she didn’t do anything and rested all day, how are you?' +
+            'Hello, she didn’t do anything and rested all day, how are you? ' +
+            'Hello, she didn’t do anything and rested all day, how are you?' +
+            ' Hello, she didn’t do anything and rested all day, how are you?',
+        time: '22:00',
     },
 }
 
 const HW1 = () => {
     return (
-        <div id={'hw1'} className={s2.wrapper}>
+        <section id={'hw1'} className={s2.container}>
             <div className={s2.hwTitle}>Dialog №1</div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div className={s2.messages}>
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
+
                 </div>
                 {/*для автоматической проверки дз (не менять)*/}
                 <div className={s2.messageSender}>
                     <MessageSender M={Message} />
                 </div>
+
             </div>
-        </div>
+        </section>
     )
 }
 

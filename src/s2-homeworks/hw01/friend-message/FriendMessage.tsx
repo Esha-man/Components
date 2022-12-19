@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './FriendMessage.module.css'
 import {MessageType} from "../HW1";
+import s2 from "../../../s1-main/App.module.css";
 
 export type FriendMessagePropsType = {
     message: MessageType
@@ -15,37 +16,36 @@ const FriendMessage = (props: FriendMessagePropsType) => {
     return (
         <div
             id={'hw1-friend-message-' + props.message.id}
-            className={s.friendMessage}
-        >
+            className={s.friendMessage}>
+
             <div className={s.friendImageAndText}>
+
                 <img
                     id={'hw1-friend-avatar-' + props.message.id}
                     src={image}
-                    alt={'Friend'}
-                />
+                    alt={'Friend'}/>
                 <div className={s.friendText}>
                     <div
                         id={'hw1-friend-name-' + props.message.id}
-                        className={s.friendName}
-                    >
+                        className={s.friendName}>
                         {userName}
-
                     </div>
-                    <pre
+                    <div
                         id={'hw1-friend-text-' + props.message.id}
-                        className={s.friendMessageText}
-                    >
+                        className={s.friendMessageText}>
                         {textMessage}
+                    </div>
 
-                    </pre>
                 </div>
+
             </div>
+
+
+
             <div
                 id={'hw1-friend-time-' + props.message.id}
-                className={s.friendTime}
-            >
+                className={s.friendTime}>
                 {timeMessage}
-
             </div>
         </div>
     )
