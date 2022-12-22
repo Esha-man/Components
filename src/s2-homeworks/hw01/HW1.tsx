@@ -42,7 +42,7 @@ export const message0: MessageType = {
         text: 'Hello, how are you, what did you do yesterday? anything and rested all day, how are you?' +
             'Hello, she didn’t do anything and rested all day, how are you? ' +
             'Hello, she didn’t do anything and rested all day, ' ,
-        time: '22:02',
+        time: '22:00',
     },
 }
 
@@ -57,7 +57,7 @@ export const friendMessage0: MessageType = {
             'Hello, she didn’t do anything and rested all day, how are you? ' +
             'Hello, she didn’t do anything and rested all day, how are you?' +
             ' Hello, she didn’t do anything and rested all day, how are you?',
-        time: '22:00',
+        time: '22:02',
     },
 }
 
@@ -73,10 +73,9 @@ const HW1 = () => {
 
                 </div>
                 {/*для автоматической проверки дз (не менять)*/}
-                <div className={s2.messageSender}>
+                {/*<div className={s2.messageSender}>*/}
                     <MessageSender M={Message} />
-                </div>
-
+                {/*</div>*/}
             </div>
         </section>
     )

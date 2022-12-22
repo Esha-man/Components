@@ -17,14 +17,36 @@
 
 .friendImageAndText img {
 
-    margin-top: auto;
+    /*margin-top: auto;*/
     width: 48px;
     height: 48px;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
     border-radius: 50%;
 }
 
+.avatar {
+    position: relative;
+    margin-top: auto;
 
+    margin-bottom: 5px;
+    /*background-color: #F5F7FB;*/
+
+}
+
+.avatar:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 25px 0 0 20px;
+    border-color: transparent #0066CC;
+    box-shadow: 0 0 0 rgba(29, 33, 38, 0.03),
+    0 1px 0 rgba(29, 33, 38, 0.1);
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -20px;
+    margin-top: -20px;
+}
 
 .friendText {
     position: relative;
@@ -33,24 +55,23 @@
     flex-direction: column;
     border-radius: 15px 15px 0 15px;
     background: #0066CC;
-    box-shadow:
-    0 5px 20px rgba(29, 33, 38, 0.03),
+    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03),
     0 1px 2px rgba(29, 33, 38, 0.1);
     color: #FFFFFF;
     margin-right: 20px;
 }
 
 .friendText:after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 25px 0 0 20px;
-    border-color: transparent red;
-    display: block;
-    width: 0;
-    z-index: 1;
-    right: -20px;
-    margin-top: 95px;
+    /*content: '';*/
+    /*position: absolute;*/
+    /*border-style: solid;*/
+    /*border-width: 25px 0 0 20px;*/
+    /*border-color: transparent red;*/
+    /*display: block;*/
+    /*width: 0;*/
+    /*z-index: 1;*/
+    /*right: -20px;*/
+    /*margin-top: 95px;*/
 
 }
 
